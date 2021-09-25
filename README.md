@@ -1,4 +1,4 @@
-![Bikeshare](Bikeshare.gif)
+![Bikeshare](bikeshare.gif)
 
 ### Date created
 
