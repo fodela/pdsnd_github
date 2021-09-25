@@ -7,7 +7,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'washington': 'washington.csv' }
 
 
-#some varialbes
+#some variables
 
 
 possible_cities = {'c' : 'chicago',
@@ -72,7 +72,7 @@ def get_filters():
 
         else:
             print(f"Sorry {category} is not a valid entry ")
-            category = input('\nWould you like to explore by month, day or both or not atall \nEnter m or d or b or n: ')
+            category = input('\nWould you like to explore by month, day or both or not at all \nEnter m or d or b or n: ')
             if  category[:1].lower() in filter_categories:
                 filter_by = category[0].lower()
                 need_cat = False
