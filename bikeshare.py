@@ -16,6 +16,7 @@ possible_cities = {'c' : 'chicago',
 
 filter_categories = ['m','d','b','n']
 month_of_year = ['jan','feb','mar','apr','may','jun']
+month_name = ['January','February','March','April','May','June']
 dow = { 'mo' : 'Monday',
         'tu' : 'Tuesday',
         'we' : 'Wednesday',
@@ -153,7 +154,7 @@ def time_stats(df):
     df['day_of_week'] = df['Start Time'].dt.day_name()
 
     
-    most_common_month = df['month'].mode()[0]
+    most_common_month = month_name[df['month'].mode()[0] - 1]
     
     print(f"Most popular month: {most_common_month} ")
 
@@ -265,12 +266,12 @@ def main():
             df = df[df['day_of_week'] == day]
             
         elif filter_by == 'm':
-            print(f"\nFiltering data by {month}... Please wait...")
+            print(f"\nFiltering data by {month_name[month - 1]}... Please wait...")
             df = df[df['month'] == month]
 
 
         elif filter_by == 'b':
-            print(f"\nFiltering data by {month} and {day}... Please wait...")
+            print(f"\nFiltering data by {month_name[month - 1]} and {day}... Please wait...")
             df = df[(df['day_of_week'] == day) & (df['month'] == month)] 
         else:
             print('\nFetching unfiltered data Please wait...')
