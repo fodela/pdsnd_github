@@ -1,7 +1,9 @@
+![Bikeshare](Bikeshare.gif)
+
 ### Date created
 
 * Project was created on 03-09-2021 
-* Readme was created on 24-09-2021
+* Readme was created on 25-09-2021
 
 ### Project Title
 
@@ -14,9 +16,15 @@ This project explores data related to bike share systems for three major cities 
 
 ### Built With
 
-Python
-Numpy
+Python 3
+NumPy
 Pandas
+
+
+### Getting Started
+
+#### System Requirements
+Install Python
 
 
 ### Files used
